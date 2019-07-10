@@ -30,7 +30,24 @@ a:visited{
     margin: auto;
 }
 
+.button {
+    background-color: aqua;
+    color: darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 3px slategray dotted;
 
+}
+
+.button:hover{
+    background-color: pink;
+    color: darkred;
+}
+
+.clr {
+    clear: both;
+}
 .box-1{
     background-color: #333;
     color: #fff;
@@ -93,4 +110,25 @@ a:visited{
 .categories li {
     padding-bottom: 6px;
     list-style-image: url('./images/smallcheck.png');
+}
+.my-form {
+    padding: 20px;
+
+}
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+.my-form label {
+    display: block;
+}
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
 }
