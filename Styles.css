@@ -11,19 +11,20 @@ body{
     margin: 4em;
 }
 
-a{
+a:link {
     text-decoration: none;
     color:black;
 }
-a:hover{
-    color:red;
-}
-a:active{
-    color:blue;
-}
-a:visited{
+a:visited {
     color:pink;
 }
+
+a:hover {
+    color:red;
+}
+a:active {
+    color:blue;
+
 
 .container{
     width: 80%;
