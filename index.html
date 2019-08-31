@@ -1,228 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Tii Tomperi</title>
-        <link rel="stylesheet" type="text/css" href=styles.css>
-    
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tiina Tomperi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
         
-        <a href="blog.html">Blogiin</a>
-        <!---Kommentit näin-->
-        <!---Headings-->
+        <div class="hedari">
+                <h1>Hedari</h1>
         
-        <div id="like_button_container"></div>
-        
-        <div class="container">
-            <div class="box-1">
-            <h1>Upia Etusivu</h1>
-            <!--H1 sisältää paddingiä itsessään, muut otsikkokoot pienempiä h6asti-->
-            <!--kappaleet <p>-->
-            
-            <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, <em>sed do eiusmod</em> tempor incididunt ut labore et dolore magna aliqua. Arcu risus quis varius quam quisque id. Justo nec ultrices dui sapien eget mi proin. Vitae suscipit tellus mauris a diam. Felis eget velit aliquet sagittis id consectetur. Non sodales neque sodales ut etiam sit. Aliquam eleifend mi in nulla posuere sollicitudin. Nec dui nunc mattis enim ut. Mattis aliquam faucibus purus in massa tempor nec. Pulvinar mattis nunc sed blandit libero.
-            </p>
-            </div> <!--box-1 sulku-->
-         
-        
-            <div class="box-2">
-                <h1>Alaotsikko tähän</h1>
-            <!--H1 sisältää paddingiä itsessään, muut otsikkokoot pienempiä h6asti-->
-    
-            <!--kappaleet <p>-->
-                <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, <em>sed do eiusmod</em> tempor incididunt ut labore et dolore magna aliqua. Arcu risus quis varius quam quisque id. Justo nec ultrices dui sapien eget mi proin. Vitae suscipit tellus mauris a diam. Felis eget velit aliquet sagittis id consectetur. Non sodales neque sodales ut etiam sit. Aliquam eleifend mi in nulla posuere sollicitudin. Nec dui nunc mattis enim ut. Mattis aliquam faucibus purus in massa tempor nec. Pulvinar mattis nunc sed blandit libero.
-                
-                </p>
-            </div> <!--box-2 sulku-->
-
-            
-            <p>In <a href="http://google.com" target="_blank">egestas</a> erat imperdiet sed euismod nisi. At consectetur lorem donec massa sapien faucibus et molestie ac. Luctus accumsan tortor posuere ac ut consequat semper viverra. Amet tellus cras adipiscing enim eu. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Mi proin sed libero enim sed faucibus turpis in. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Pellentesque habitant morbi tristique senectus et netus et malesuada. Etiam non quam lacus suspendisse faucibus interdum. A pellentesque sit amet porttitor eget dolor morbi non arcu. Morbi tempus iaculis urna id. Purus viverra accumsan in nisl nisi scelerisque eu. Dignissim sodales ut eu sem integer vitae justo.
-
-            </p>
-
-            <!--Inline elements: span, img, a; do not start a new line and only take the necessary width. Block level elements: div, h1, p, form; start on a new line and take full width available-->
-            <!--lists-->
-        
-            <div class="categories">
-            <h2>Navigointi</h2>
-            <ul>
-                <li><a href="blog.html">Blogi 1</a></li>
-                <li><a href="blog.html">Blogi 2</a></li>
-                <li><a href="blog.html">Blogi 3</a></li>
-                <li><a href="blog.html">Blogi 4</a></li>
-            </ul>
-        
-            <ol>
-                <li><a href="http://google.com" target="_blank">Google</li>
-                <li><a href="http://tomperi.net">Koti</a></li>
-                <li><a href="http://ilmatieteenlaitos.fi" target="_blank">Keli</a></li>
-                <li><a href="https://www.foreca.fi/Finland/Oulu" target="_blank">Kotikeli</a></li>
-                <li><a href="https://iltalehti.fi">Iltis</a></li>
-            </ol>
-        
-        
-            <!--Tables-->
-        
-                <table>
-                    <thead> </thead>
-                    <tr>
-                    <th>Nimi</th>
-                    <th>Sähköposti</th>
-                    <th>Ikä</th>
-                    <th></th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>Tii Tomperi</td>
-                            <td>tt@gmail.com</td>
-                            <td>41</td>
-                        </tr>
-                        <tr>
-                            <td>Sep Tomperi</td>
-                            <td>st@gmail.com</td>
-                            <td>41</td>
-                        </tr>
-                        <tr>
-                            <td>Han Tomperi</td>
-                            <td>ht@gmail.com</td>
-                            <td>7</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <br>
-                <hr>
-                <br>
-                        <!--Forms-->
-            
-                <form class="my-form"> 
-                    
-                    <h2>Yhteydenotot</h2>        
-                    
-                    <form action="process.php" method="POST"> 
-                
-                    <div class="form-group">
-                        <label>Etunimi</label>
-                        <input type="text" name="firstName" placeholder="Enter first name">
-                    </div>
-                
-                <br>
-                
-                    <div class="form-group">
-                        <label>Sukunimi</label>
-                        <input type="text" name="lastName" placeholder="Enter last name">
-                    </div>
-                
-                <br>
-                
-                    <div class="form-group">
-                        <label>Sähköposti</label>
-                        <input type="text" name="email" placeholder="Email">
-                    </div>
-                
-                <br>
-                
-                    <div class="form-group">
-                        <label>Viesti</label>
-                        <textarea name="message"></textarea>
-                    </div>
-                
-                <br>
-                
-                    <div class="form-group">
-                        <label>Sukupuoli</label>
-                        <select name="gender">
-                            <option value="male">Mies</option>
-                            <option value="female">Nainen</option>
-                            <option value="other">Muu</option>
-                        </select>
-                    </div>
-                
-                <br>
-                
-                    <div class="form-group">
-                        <label>Ikä</label>
-                        <input type="number" name="age" value="30">
-                    </div>
-        
-                <br>
-        
-                    <div class="form-group">
-                        <label>Syntymäaika:</label>   
-                        <input type="date" name="birthday">
-                    </div>
-        
-                    <br>
-        
-                    <input class="button" type="submit" name="submit" value="Lähetä">
-
-                </form>
-                            <!--images-->
-                <br>
-
-                <div class="block">
-                    <h3>Heading</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint, accusamus culpa voluptatem maiores ullam expedita consectetur velit aut eum laborum excepturi aliquam officiis esse, minus eveniet nobis? Repudiandae, architecto?</p>
-                </div>
-
-                <div class="block">
-                        <h3>Heading</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint, accusamus culpa voluptatem maiores ullam expedita consectetur velit aut eum laborum excepturi aliquam officiis esse, minus eveniet nobis? Repudiandae, architecto?</p>
-
-                </div>
-
-                <div class="block">
-                        <h3>Heading</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint, accusamus culpa voluptatem maiores ullam expedita consectetur velit aut eum laborum excepturi aliquam officiis esse, minus eveniet nobis? Repudiandae, architecto?</p>
-
-                </div>
-                <br>
-                <hr>
-                <br>
-
-<!--
-                        <a href="Images/kukka.jpg">
-                <img src="Images/kukka.jpg" alt="Violetti kukka" width="200">
-                    
-                </a>
-
-                    <!--myös korkeuden voi hoidella, mutta normaalisti auto-->
-                    <!--Quotations
-        
-                    <blockquote cite="http://traversymedia.com">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda architecto, asperiores exercitationem quibusdam sint laudantium illo facere ex nemo. Magni natus rem distinctio sunt nobis quos recusandae provident nisi?
-        
-                    </blockquote>
-
-                    <p>The <abbr title="World Wide Web">WWW</abbr>is awesome!</p>
-
-                    <p><cite>HTML crash course</cite> by Brad Traversy</p>
--->
-<br>
-<hr>
-               
-        </div> <!--end of container?-->
-        <div class="clr"></div>
-
-        <div id="main-block">
-                <h3>Heading</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint, accusamus culpa voluptatem maiores ullam expedita consectetur velit aut eum laborum excepturi aliquam officiis esse, minus eveniet nobis? Repudiandae, architecto?</p>
-
         </div>
-
-        <div id="sidebar">
-                
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint, accusamus culpa voluptatem maiores ullam expedita consectetur velit aut eum laborum.</p>
-
+        
         </div>
-
-
-
-
-        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-        <script src="like_button.js"></script>
-
-  
-    </body>
+        
+        <div class="grid-container">
+                <div class="logos">
+                        <ul>
+                            <li><a href="1"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                            <li><a href="2"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                            <li><a href="3"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                            <li><a href="4"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                            <li><a href="5"><i class="fa fa-gift" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+            <div class="git">GitHub</div>
+            <div class="contact">Contact
+                
+            </div>
+        </div>
+            <div class="aikajana">Aikajana</div>
+            <div class="footer">&copy;2019 Tiina Tomperi</div>
+        </div>
+      
+</body>
 </html>
