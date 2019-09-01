@@ -1,85 +1,47 @@
+/* CSS Variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
 body {
-    margin: 0%;
-    padding: 0%;
-    display:grid;
-    grid-area: auto;
-    background: rgb(248, 248, 148);
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
 }
-.hedari {
-    background-image: url("images/circus1.jpg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    height: auto;
-}  
-.hedari h1 {
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 5rem;
-    font-size-adjust: 0,58;
-    color: #fff;
-    text-shadow: 0.2em 0.2em #b0b0b0;
 
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
 }
-.grid-container {
+img {
+    max-width: 100%;
+}
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 1em;
-    background-color: ;
-    padding: 1em;
+    grid-gap: 20px;
 }
-
-.logos {
-   
-    margin: 0%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    min-height:40px;
-    background: ;
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-}
-
-
-
-.git {
-    grid-column: 4 / 5;
-    grid-row: 2 / 4;
-    background: #ff91b6;
-
-}
-.contact {
-    grid-column: 4 / 5;
-    grid-row: 4 / 5;
-    background: #81f1d9
-
-}
-/*.aikajana {
-    grid-column:  / 5;
-    grid-row: / ;
-    background: rgb(112, 238, 112);
-
-}*/
-.footer {
-    grid-column: 1 / 5;
-    grid-row: 5 / 6;
-
-    text-align: center;
-
-}
-
-.logos ul {
-    margin: 0%;
+.main-nav ul {
     padding: 0%;
-    display: flex;
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
 
 }
-.logos li {
+.main-nav li {
+    display: block;
     position: relative;
     list-style: none;
     width: 100px;
@@ -99,7 +61,7 @@ ul li:after
     left: 0;
     width: 100%;
     height: 100%;
-    background: #;
+    background: lightblue;
     border-radius:50%;
     filter: blur(20px);
     opacity: 0;
@@ -166,19 +128,120 @@ ul li:nth-child(4):after
 {
     background: linear-gradient(45deg,#ff0000,#ffc107);
 }
-li:nth-child(5) a,
-ul li:nth-child(5):before,
-ul li:nth-child(5):after
-{
-    background: linear-gradient(45deg,#5f18a1,#56e244);
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(images/kukka.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
 }
 
-
-
-display: flex;
-    justify-content: center;
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
+}
+.top-box {
+    background: var(--primary);
+    display: grid;
     align-items: center;
-    min-height: 100vh;*/
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+.top-box-a {
+    grid-area: top-box-a;
+}
 
+.top-box-b {
+    grid-area: top-box-b;
+}
 
-/*
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+@media (max-width: 700px) {
+    .top-container {
+      grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+  
+    .showcase h1 {
+      font-size: 2.5rem;
+    }
+  
+    .main-nav ul {
+      grid-template-columns: 1fr;
+    }
+  
+    .info {
+      grid-template-columns: 1fr;
+    }
+  
+    .info .btn {
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .top-container {
+      grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+  }
