@@ -1,0 +1,65 @@
+
+img {
+    border-radius: 5rem;
+    max-width: 15px;
+}
+/* <div class="timeline">
+ 
+          <div class="title">
+            <h3>2019 - Present <img src="images/pinkki-t.png"></h3>
+            
+            <p>Full Stack -valmennus, OSEKK</p>
+          </div>
+          <div class="body">
+            <p>Full Stack -valmennus</p>
+            <ul>
+              <li>html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>..</li>
+              <li>..</li>
+              <li>..</li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="title">
+            <h3>2017 - ???? <img src="images/pinkki-t.png"></h3>
+            <p>FM, Englantilainen filologia, Oulun Yliopisto</p>
+          </div>
+          <div class="body">
+            <p>Englantilainen filologia, aineenopettajakoulutus, maisterivaihe</p>
+            <ul>
+              <li>Kielenoppimisen ekologinen perspektiivi</li>
+              <li>Teknologia kieltenopetuksessa</li>
+              <li>OPS 2016</li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="title">
+            <h3>2014 - 2017 <img src="images/pinkki-t.png"></h3>
+            <p>HuK Englantilainen filologia, Oulun Ylipisto</p>
+          </div>
+          <div class="body">
+            <p>Englantilainen filologia, aineenopettajakoulutus, kandivaihe</p>
+            <ul>
+              <li>Tietokonepelien affordanssit kielenoppimisessa - <i>Expedition MineCraft.</i></li>
+              <li>Aineenopettajan pedagogiset opinnot</li>
+              <li>Pohjoismaisten kielten laaja sivuaine, perus- ja aineopinnot</li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="title">
+            <h3>2002 - 2014 <img src="images/pinkki-t.png"></h3>
+            <p>Ravintolatyöntekijä, vuorovastaava, Oulun Kärpät Oy</p>
+          </div>
+          <div class="body">
+            <p>Ravintolatyöntekijänä erilaisissa työtehtävissä ja -pisteissä,</p> 
+            <p>pääsääntöisesti VIP-ravintolassa.</p> 
+            <p>Vuorovastaavana viimeisen vuoden aikana. </p>
+            
+          </div>
+        </div>
+      */
