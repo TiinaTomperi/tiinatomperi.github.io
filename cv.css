@@ -1,75 +1,171 @@
+body {
+  background-color: #cfcfcf;
+  
+}
+h1 {
+  color: #585858;
+}
+
+
+.grid-container li {
+    list-style: none;
+}
+.grid-container {
+  display: block;
+  padding:2em;
+  margin:2em;
+  grid-template: repeat(7, 1fr) / 50px 100px;
+  grid-gap: 1em;
+  box-sizing: border-box;
+}
 
 img {
     border-radius: 5rem;
     max-width: 15px;
 }
-.site {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 2fr) 1fr;
-    grid-gap: 10px;
-    min-width: 100%;
-
-}
-.header {
-    background:green;
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.item1 h2 {
+  font-size: 20px;
 }
 
-.vasen {
-    background: yellow;
+.item1 {
+  grid-area: 1 / 1 / auto / span 7;
+    height: 100px;
+    background: linear-gradient(45deg, pink, purple);
+    border: 5px rgb(15, 9, 9) solid;
+    border-color: #ddd;
+    border-radius: .5em; 
+    color: #ddd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    text-align: center;
+    padding: 1em;
 }
-.vasen1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-} 
-.oikea1 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 6;
+
+.item2 {
+  background: linear-gradient(50deg,lightblue, #426DE6);
+  border: 3px #ddd solid;
+  border-radius: .5em;
+  padding: .5em;
+  font-size: 16px;
+  text-align: right;
+  grid-area: 2 / 1 / 4 / span 3;
+
 }
-.vasen2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 7;
+
+.item3 {
+  background: linear-gradient(60deg, #fff787, #45EA79);
+  border: 3px #ddd solid;
+  border-radius: .5em;
+  
+
 }
-.oikea2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 7;
-    grid-row-end: 9;
-} 
-.vasen3 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 8;
-    grid-row-end: 10;
-}   
-.oikea3 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 12;
+
+/*
+  <div class="gradient-border" id="box">&copy;ttomperi 2019</div>  
+.item2 {
+  display: grid;
+  grid-area: 2 / 2 / auto / span 3;
+  text-align: right; 
+
 }
-.oikea {
-    background:blue;
+.item3 {
+  display: grid;
+  grid-area: 3 / 5 / auto / 6;
+  
+  text-align: left;
+
+}
+.item4 {
+  display: grid;
+  
+  text-align: right;
+}
+.item5 {
+  display: grid;
+  
+  text-align: left;
+}
+.item6 {
+  display: grid;
+  
+  text-align: right;
 }
 
 
-.footer {
-    background:pink;
-    grid-column-start: 1;
-    grid-column-end: 8;
-    grid-row-start: 7;
-    grid-row-end: 8;
+.item7 {
+  display: grid;
+  
+  text-align: left;
 
+}
+.item8 {
+  display: grid;
+  
+  text-align: right;
+
+}
+.item9 {
+  display: grid;
+  
+  text-align: left;
+
+}
+/*#box.gradient-border {
+  grid-column: 1 / 9;
+  grid-row: 8 / 9;
+}*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+/*html, body {
+  height: 50%;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #1098ad;
+}*/
+#box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* <div class="timeline">
